@@ -3,7 +3,7 @@ import '../styles/search.css';
 import { TextField } from '@material-ui/core';
 
 const Search = () => {
-    const [query, setQuery] = useState('');
+    const [input, setInput] = useState('');
 
     return (
         <div>
@@ -14,8 +14,8 @@ const Search = () => {
                     placeholder="Enter a number"
                     id="search"
                     className="input"
-                    value={query}
-                    onChange={(e) => setQuery(e.target.value)}
+                    value={input}
+                    onChange={(e) => setInput(e.target.value)}
                 />
             </form>
         </div>
