@@ -2,9 +2,7 @@ import React, { useState } from 'react';
 import '../styles/search.css';
 import { TextField } from '@material-ui/core';
 
-const Search = () => {
-    const [input, setInput] = useState('');
-
+const Search = ({ search, setSearch, handleSearch }) => {
     return (
         <div>
             <form>
@@ -14,8 +12,9 @@ const Search = () => {
                     placeholder="Enter a number"
                     id="search"
                     className="input"
-                    value={input}
-                    onChange={(e) => setInput(e.target.value)}
+                    value={search}
+                    onKeyUp={handleSearch}
+                    onChange={(e) => setSearch(e.target.value)}
                 />
             </form>
         </div>
