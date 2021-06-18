@@ -6,12 +6,14 @@ They say numbers don't lie! Explore some fun trivia about numbers!
 
 </div>
 
-### Live demo:
+## Demo
+
+<img src='https://i.imgur.com/YeYg2zT.gif' alt='Integer trivia' width='100%' />
 
 ## Features
 
 -   Query any number by entering it in a search bar.
--   Will generate a trivia for that numnber
+-   Will generate a trivia for that number
 
 ## Resources
 
