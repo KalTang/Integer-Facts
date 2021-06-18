@@ -4,6 +4,7 @@ import './styles/app.css';
 import Header from './components/Header';
 import Search from './components/Search';
 import ResultDisplay from './components/ResultDisplay';
+import Loader from './utils/Loader';
 
 function App() {
     const [data, setData] = useState([]);
@@ -20,7 +21,7 @@ function App() {
                     setData(triviaData.data);
                 }
             } else {
-                setData('no result');
+                setData(<Loader />);
             }
         } catch (error) {
             console.error(error.message);

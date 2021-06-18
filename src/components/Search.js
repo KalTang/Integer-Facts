@@ -8,7 +8,7 @@ const Search = ({ search, setSearch, handleSearch }) => {
             <form>
                 <TextField
                     type="text"
-                    variant="outlined"
+                    variant="standard"
                     placeholder="Enter a number"
                     id="search"
                     className="input"
